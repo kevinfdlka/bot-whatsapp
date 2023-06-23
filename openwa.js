@@ -12,12 +12,12 @@ const { getSystemErrorMap } = require("util");
 const { Configuration, OpenAIApi } = require("openai");
 const { url } = require("inspector");
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "#",//use secret key on open ai 
 });
 const openai = new OpenAIApi(configuration);
 const client = new Client({
   authStrategy: new LocalAuth({
-    clientId: "client-one", //Un identificador(Sugiero que no lo modifiques)
+    clientId: "client-one", 
   }),
 });
 
